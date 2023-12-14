@@ -14,11 +14,11 @@ public enum Numero {
     QUEEN("Q",new int[]{10}),
     KING("K",new int[]{10});
 
-    private String toSee;
+    private String typeOf;
     private int[] value;
 
-    Numero(String toSee, int[] value) {
-        this.toSee = toSee;
+    Numero(String typeOf, int[] value) {
+        this.typeOf = typeOf;
         this.value = value;
     }
 
@@ -26,12 +26,12 @@ public enum Numero {
         return value;
     }
 
-    public String getToSee() {
-        return toSee;
+    public String getTypeOf() {
+        return typeOf;
     }
 
     @Override
     public String toString() {
-        return toSee;
+        return typeOf;
     }
 }
